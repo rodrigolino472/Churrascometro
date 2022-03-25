@@ -1,0 +1,48 @@
+*{
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+  font-family: Helvetica, sans-serif;
+}
+body{
+  background-position: center;
+  background-size: cover;
+  background-image: url('./imagens/familia.png');
+  background-color:#5d4037;
+}
+.container{
+  margin: 3rem auto;
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  background-color: #efebe9;
+  border: .2rem solid #3e2723;
+  border-radius: .3rem;
+}
+#title{
+  color: #3e2723;
+}
+input{
+  width: 50%;
+  padding: .5rem;
+  margin: .3rem 0;
+  border: 1px solid #4e342e;
+}
+.btn{
+  margin-top: 1rem;
+  padding: .5rem .25rem;
+  width: 50%;
+  border-radius: .3rem;
+  background: #3e2723;
+  cursor: pointer;
+  color: #ccc;
+  box-shadow: 0 .3rem .4rem .5 #3e2723;
+}
+.btn:hover{
+  opacity: .95;
+}
