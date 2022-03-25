@@ -24,7 +24,7 @@ function calcular(){
   let refriPorPessoa = qtdRefri(duracao)
 
   let totalCarne = carnePorPessoa * adultos + carnePorPessoa/2 * criancas
-  let totalCerveja = cervejaPorPessoa * adultos + cervejaPorPessoa/2 * criancas
+  let totalCerveja = cervejaPorPessoa * adultos 
   let totalRefri = refriPorPessoa * adultos + refriPorPessoa/2 * criancas
 
   totais(totalCarne, totalCerveja, totalRefri)
@@ -56,3 +56,4 @@ let totais = function(carne, cerveja, refri){
   saida.innerHTML += `<p>${Math.ceil(cerveja / 350)} latas de cerveja</p>`
   saida.innerHTML += `<p>${Math.ceil(refri / 2000)} garrafas pet de 2 litros</p>`
 }
+

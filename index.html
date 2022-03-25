@@ -13,7 +13,7 @@
     <h1 id="title"><i class="fa-solid fa-utensils"></i> Churrascômetro</h1>
     <div class="campo">
       <label for="adultos"><i class="fa-solid fa-people-group"></i></label>
-      <input id="adultos" type="number" min="0" name="adultos" placeholder="adultos">
+      <input id="adultos" type="number" min="0" name="adultos" placeholder="adultos" pattern="[0-9]+$">
     </div>
     <div class="campo">
       <label for="criancas"><i class="fa-solid fa-children"></i></label>
@@ -21,7 +21,7 @@
     </div>
     <div class="campo">
       <label for="duracao"><i class="fa-regular fa-clock"></i></label>
-      <input id="duracao" type="number" min="0" type="number" name="duracao" placeholder="duração">
+      <input id="duracao" type="number" min="0" type="number" name="duracao" placeholder="duração(em horas)">
     </div>
     <button id="calcular" class="btn" type="button" onclick="calcular()">Calcular</button>
     <div class="resultado">

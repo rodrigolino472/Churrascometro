@@ -19,6 +19,7 @@ body{
 }
 .container{
   width: 50vw;
+  min-width: 350px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -59,4 +60,10 @@ input{
 }
 .btn:hover{
   opacity: .95;
+}
+
+@media (max-width: 950px){
+  .container{
+    width: 70vw;
+  }
 }
