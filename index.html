@@ -4,16 +4,28 @@
   <meta charset="UTF-8">
   <link rel="stylesheet" href="estilo.css">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>Churrascômetro</title>
 </head>
 <body>
   <div class="container">
-    <h1 id="title">Churrascômetro</h1>
-    <input id="adultos" type="number" name="adultos" placeholder="adultos">
-    <input id="criancas" type="number" name="criancas" placeholder="crianças">
-    <input id="duracao" type="number" type="number" name="duracao" placeholder="duração">
-    <button class="btn">Calcular</button>
+    <h1 id="title"><i class="fa-solid fa-utensils"></i> Churrascômetro</h1>
+    <div class="campo">
+      <label for="adultos"><i class="fa-solid fa-people-group"></i></label>
+      <input id="adultos" type="number" min="0" name="adultos" placeholder="adultos">
+    </div>
+    <div class="campo">
+      <label for="criancas"><i class="fa-solid fa-children"></i></label>
+      <input id="criancas" type="number" min="0" name="criancas" placeholder="crianças">
+    </div>
+    <div class="campo">
+      <label for="duracao"><i class="fa-regular fa-clock"></i></label>
+      <input id="duracao" type="number" min="0" type="number" name="duracao" placeholder="duração">
+    </div>
+    <button id="calcular" class="btn" type="button" onclick="calcular()">Calcular</button>
+    <div class="resultado">
+    </div>
   </div>
 </body>
 <script src="script.js"></script>

@@ -6,42 +6,56 @@
   font-family: Helvetica, sans-serif;
 }
 body{
+  width: 100vw;
+  height: 100vh;
+  padding-bottom: 2rem;
+  overflow: hidden;
   background-position: center;
+  background-attachment: fixed;
   background-size: cover;
   background-image: url('./imagens/familia.png');
-  background-color:#5d4037;
+  background-color: #5d4037;
+  background-repeat: no-repeat;
 }
 .container{
-  margin: 3rem auto;
   width: 50vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 2rem;
+  margin: 1rem auto;
+  padding: 1rem;
   background-color: #efebe9;
   border: .2rem solid #3e2723;
   border-radius: .3rem;
 }
 #title{
   color: #3e2723;
+  margin-bottom: .7rem;
+}
+.campo{
+  width: 50%;
+}
+i{
+  color: #3e2723;
 }
 input{
-  width: 50%;
+  width: 100%;
   padding: .5rem;
   margin: .3rem 0;
   border: 1px solid #4e342e;
 }
 .btn{
-  margin-top: 1rem;
+  margin: 1rem 0;
   padding: .5rem .25rem;
   width: 50%;
   border-radius: .3rem;
   background: #3e2723;
   cursor: pointer;
   color: #ccc;
-  box-shadow: 0 .3rem .4rem .5 #3e2723;
+  box-shadow: 0 .3rem .2rem #3e2723;
+  transition: opacity .5s;
 }
 .btn:hover{
   opacity: .95;
