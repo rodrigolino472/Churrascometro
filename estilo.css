@@ -6,6 +6,7 @@
   font-family: Helvetica, sans-serif;
 }
 body{
+  display: flex;
   width: 100vw;
   height: 100vh;
   padding-bottom: 2rem;
@@ -18,7 +19,7 @@ body{
   background-repeat: no-repeat;
 }
 .container{
-  width: 50vw;
+  width: 40vw;
   min-width: 350px;
   display: flex;
   flex-direction: column;
@@ -34,9 +35,11 @@ body{
 #title{
   color: #3e2723;
   margin-bottom: .7rem;
+  animation: move 1s .9 forwards;
 }
 .campo{
   width: 50%;
+  animation: move3 1s .9 forwards;
 }
 i{
   color: #3e2723;
@@ -55,13 +58,47 @@ input{
   background: #3e2723;
   cursor: pointer;
   color: #ccc;
-  box-shadow: 0 .3rem .2rem #3e2723;
-  transition: opacity .5s;
+  
+  transition: all .5s;
+  animation: move2 1s .9 forwards;
 }
 .btn:hover{
-  opacity: .95;
+  opacity: .9;
+  box-shadow: .1rem .1rem .3rem #000;
 }
-
+@keyframes move{
+  0%{
+      transform: translateY(-10rem) rotateY(-30deg);
+      opacity: 0;
+  }
+  100%{
+      transform: translateY(0) rotateY(0);
+      opacity: 1;
+  }
+}
+@keyframes move2{
+  0%{
+      transform: translateY(10rem) rotateY(30deg);
+      opacity: 0;
+  }
+  100%{
+      transform: translateY(0) rotateY(0);
+      opacity: 1;
+  }
+}
+@keyframes move3{
+  0%{
+    transform: translateX(-5rem);
+    opacity: 0;
+  }
+  100%{
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.resultado p{
+  animation: move2 1s .9 forwards;
+}
 @media (max-width: 950px){
   .container{
     width: 70vw;

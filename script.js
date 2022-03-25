@@ -56,4 +56,3 @@ let totais = function(carne, cerveja, refri){
   saida.innerHTML += `<p>${Math.ceil(cerveja / 350)} latas de cerveja</p>`
   saida.innerHTML += `<p>${Math.ceil(refri / 2000)} garrafas pet de 2 litros</p>`
 }
-
