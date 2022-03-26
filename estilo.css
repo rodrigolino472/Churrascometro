@@ -21,6 +21,7 @@ body{
 .container{
   width: 40vw;
   min-width: 350px;
+  min-height: 320px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -102,5 +103,21 @@ input{
 @media (max-width: 950px){
   .container{
     width: 70vw;
+  }
+}
+@media (max-height: 400px){
+  body{
+    overflow:visible;
+    position: relative;
+    padding: 0;
+    margin: 0;
+  }
+  .container{
+    position: absolute;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    min-width: 100%;
+    min-height: 100%;
   }
 }
